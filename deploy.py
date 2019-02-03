@@ -8,5 +8,9 @@ def home():
 def page_2():
    return render_template("page2.html")
 
+@app.route("/snake")
+def snake():
+   return render_template("snakegame.html")
+
 if __name__ == "__main__":
    app.run(debug=True)
