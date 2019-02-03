@@ -8,6 +8,10 @@ def home():
 def page_2():
    return render_template("page2.html")
 
+@app.route("/page3")
+def page_3():
+   return render_template("page3.html")
+
 @app.route("/snake")
 def snake():
    return render_template("snakegame.html")
