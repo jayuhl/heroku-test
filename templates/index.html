@@ -5,9 +5,37 @@
 		body{
 			background-color:rgba(44, 120, 207, 0.692) !important;
 		}
-		h1{
-    		color:white !important;
-		}
+		h1 {
+            color:white;
+            text-align: center;
+        }
+        p {
+            text-align: center;
+            text-decoration:underline;
+            color:yellow;
+            font-size: 20px;
+        }
+        img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            /* width: 10%; */
+        }
+        audio {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            /* width: 10%; */
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
 	</style>
 </head>
 <body>
@@ -19,7 +47,7 @@
     <img alt="Avatar image" class="img-circle" src="https://code.sololearn.com/Icons/Avatars/0.jpg">
     <br/>
     <br/>
-    <input type="submit" value="Submit" /> 
+    <button onClick="javascript:alert('First Page Button Using Internal Javascript!')">Test Event</button>
 
     <p><iframe src="https://pascack.instructure.com/courses/3801/files/578292/download" width="500" height="500" data-api-endpoint="https://pascack.instructure.com/api/v1/courses/3801/files/578292" data-api-returntype="File"></iframe></p>
 </body>
