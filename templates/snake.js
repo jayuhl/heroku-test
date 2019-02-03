@@ -1,3 +1,4 @@
+<canvas id="gc" width="600" height="500"></canvas>
 <script>
 window.onload=function() {
 	canv=document.getElementById("gc");
