@@ -4,7 +4,7 @@ body{
 h1 {
     color:white;
     text-align: center;
-  }
+}
 p {
     text-align: center;
     text-decoration:underline;
@@ -16,7 +16,7 @@ img {
     margin-left: auto;
     margin-right: auto;
     /* width: 10%; */
-  }
+}
 audio {
     display: block;
     margin-left: auto;
