@@ -11,6 +11,9 @@ p {
     color:yellow;
     font-size: 20px;
 }
+a {
+    font-size: 20px;
+}
 img {
     display: block;
     margin-left: auto;
