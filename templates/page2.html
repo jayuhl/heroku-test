@@ -1,13 +1,20 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <link type="text/css" rel="stylesheet" href="styles.css">
+        <script type="text/javascript" src="snake.js"></script>
+    </head>
 <body>
     <a href="/">Go Home</a>
     <br/>
     <h1>Welcome to Page 2!</h1>
-    <br/>
-    <img alt="Avatar image" class="img-circle" src="https://code.sololearn.com/Icons/Avatars/0.jpg">
+    
+    <p>This is formatted using a CSS file... color, underline, center, font-size, etc.</p>
+    <img alt="Avatar image" class="img-circle" title="some hover over text" src="https://code.sololearn.com/Icons/Avatars/0.jpg">
     <br/><br/>
-    <input type="submit" value="Don't Click" /> 
+    <br>
+    <!-- <input type="submit" value="Don't Click" />  DON'T USE THIS USE BUTTON-->
+    <button onClick="javascript:alert('Thank you for pressing!')">Test Event</button>
     <br/><br/>
     <audio controls>
         <source src="http://www.sololearn.com/uploads/audio.mp3" type="audio/mpeg">
@@ -15,6 +22,8 @@
     </audio>
     <br/>
     
+    <!-- <iframe src="snake.js" frameborder="0"></iframe> -->
+    <p><iframe src="snake.js" width="500" height="500"></iframe></p>
     
 </body>
 </html>
