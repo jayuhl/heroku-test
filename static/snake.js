@@ -1,8 +1,8 @@
-{/* <canvas id="gc" width="600" height="500"></canvas> */}
-// {/* <script> */}
+<canvas id="gc" width="600" height="500"></canvas>
+<script>
 window.onload=function() {
-	// canv=document.getElementById("gc");
-	// ctx=canv.getContext("2d");
+	canv=document.getElementById("gc");
+	ctx=canv.getContext("2d");
 	document.addEventListener("keydown",keyPush);
 	setInterval(game,1000/15);
 	console.log('Game Loaded.')
@@ -63,4 +63,4 @@ function keyPush(evt) {
 			break;
 	}
 }
-// </script>
+</script>
