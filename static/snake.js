@@ -2,7 +2,7 @@
 // {/* <script> */}
 window.onload=function() {
 	// canv=document.getElementById("gc");
-	ctx=canv.getContext("2d");
+	// ctx=canv.getContext("2d");
 	document.addEventListener("keydown",keyPush);
 	setInterval(game,1000/15);
 	console.log('Game Loaded.')
