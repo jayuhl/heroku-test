@@ -16,5 +16,9 @@ def page_3():
 def snake():
    return render_template("snakegame.html")
 
+@app.route("/map")
+def my_map():
+   return render_template("mymap.html")
+
 if __name__ == "__main__":
    app.run(debug=True)
