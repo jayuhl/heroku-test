@@ -25,13 +25,13 @@ function game() {
 	px+=xv;
 	py+=yv;
 console.log('px = ' + px)
-	if(px < 0)    {px = canvas.width/tc-1;} //allow snake to pass-through the screen
-	if(px > canvas.width/tc-1) {px = 0;}
-	if(py < 0)    {py = canvas.height/tc-1;}
-	if(py > canvas.height/tc-1) {py = 0;}
+	if(px < 0)    {px = this.canvas.width/tc-1;} //allow snake to pass-through the screen
+	if(px > this.canvas.width/tc-1) {px = 0;}
+	if(py < 0)    {py = this.canvas.height/tc-1;}
+	if(py > this.canvas.height/tc-1) {py = 0;}
 
-	ctx.fillStyle="black";
-	ctx.fillRect(0,0,canvas.width,canvas.height);
+	this.ctx.fillStyle="black";
+	this.ctx.fillRect(0,0,this.canvas.width,this.canvas.height);
 
 	ctx.fillStyle="lime";
 	for(var i=0;i<trail.length;i++) {
@@ -47,8 +47,8 @@ console.log('px = ' + px)
 
 	if(ax==px && ay==py) {
 		tail++;
-		ax=Math.floor(Math.random()*canvas.width/tc);
-		ay=Math.floor(Math.random()*canvas.height/tc);
+		ax=Math.floor(Math.random()*this.canvas.width/tc);
+		ay=Math.floor(Math.random()*this.canvas.height/tc);
 	}
 	ctx.fillStyle="red";
 	ctx.fillRect(ax*gs,ay*gs,gs-2,gs-2);
