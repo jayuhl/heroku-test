@@ -3,7 +3,7 @@ function startGame() {
   }
   
   var myGameArea = {
-    canv : document.createElement("canvas"),
+    canv : document.createElement("canv"),
     start : function() {
       this.canv.width = 600;
       this.canv.height = 500;
@@ -24,7 +24,7 @@ tail = 5;
 function game() {
 	px+=xv;
 	py+=yv;
-
+console.log('px = ' + px)
 	if(px < 0)    {px = canv.width/tc-1;} //allow snake to pass-through the screen
 	if(px > canv.width/tc-1) {px = 0;}
 	if(py < 0)    {py = canv.height/tc-1;}
