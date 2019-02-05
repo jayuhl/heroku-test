@@ -24,7 +24,7 @@ tail = 5;
 function game() {
 	px+=xv;
 	py+=yv;
-console.log('px = ' + px)
+console.log('width = ' + this.canvas.width)
 	if(px < 0)    {px = this.canvas.width/tc-1;} //allow snake to pass-through the screen
 	if(px > this.canvas.width/tc-1) {px = 0;}
 	if(py < 0)    {py = this.canvas.height/tc-1;}
@@ -33,7 +33,7 @@ console.log('px = ' + px)
 	this.ctx.fillStyle="black";
 	this.ctx.fillRect(0,0,this.canvas.width,this.canvas.height);
 
-	ctx.fillStyle="lime";
+	this.ctx.fillStyle="lime";
 	for(var i=0;i<trail.length;i++) {
 		ctx.fillRect(trail[i].x*gs,trail[i].y*gs,gs-2,gs-2);
 		if(trail[i].x==px && trail[i].y==py) {
