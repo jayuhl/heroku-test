@@ -13,8 +13,12 @@ def page_3():
    return render_template("page3.html")
 
 @app.route("/snake")
-def snake():
+def snake_1():
    return render_template("snakegame.html")
+
+@app.route("/snake2")
+def snake_2():
+   return render_template("snaketake2.html")
 
 @app.route("/map")
 def my_map():
