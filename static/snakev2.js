@@ -7,7 +7,7 @@ function startGame() {
     start : function() {
       this.canv.width = 600;
       this.canv.height = 500;
-      this.ctx = this.canvas.getContext("2d");
+      this.ctx = this.canv.getContext("2d");
       document.body.insertBefore(this.canv, document.body.childNodes[0]);
       document.addEventListener("keydown",keyPush);
       setInterval(game,1000/15);
