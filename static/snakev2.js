@@ -3,11 +3,11 @@ function startGame() {
   }
   
   var myGameArea = {
-    canv : document.createElement("canv"),
+    canvas : document.createElement("canvas"),
     start : function() {
-      this.canv.width = 600;
-      this.canv.height = 500;
-      this.ctx = this.canv.getContext("2d");
+      this.canvas.width = 600;
+      this.canvas.height = 500;
+      this.ctx = this.canvas.getContext("2d");
       document.body.insertBefore(this.canv, document.body.childNodes[0]);
       document.addEventListener("keydown",keyPush);
       setInterval(game,1000/15);
@@ -25,13 +25,13 @@ function game() {
 	px+=xv;
 	py+=yv;
 console.log('px = ' + px)
-	if(px < 0)    {px = canv.width/tc-1;} //allow snake to pass-through the screen
-	if(px > canv.width/tc-1) {px = 0;}
-	if(py < 0)    {py = canv.height/tc-1;}
-	if(py > canv.height/tc-1) {py = 0;}
+	if(px < 0)    {px = canvas.width/tc-1;} //allow snake to pass-through the screen
+	if(px > canvas.width/tc-1) {px = 0;}
+	if(py < 0)    {py = canvas.height/tc-1;}
+	if(py > canvas.height/tc-1) {py = 0;}
 
 	ctx.fillStyle="black";
-	ctx.fillRect(0,0,canv.width,canv.height);
+	ctx.fillRect(0,0,canvas.width,canvas.height);
 
 	ctx.fillStyle="lime";
 	for(var i=0;i<trail.length;i++) {
@@ -47,8 +47,8 @@ console.log('px = ' + px)
 
 	if(ax==px && ay==py) {
 		tail++;
-		ax=Math.floor(Math.random()*canv.width/tc);
-		ay=Math.floor(Math.random()*canv.height/tc);
+		ax=Math.floor(Math.random()*canvas.width/tc);
+		ay=Math.floor(Math.random()*canvas.height/tc);
 	}
 	ctx.fillStyle="red";
 	ctx.fillRect(ax*gs,ay*gs,gs-2,gs-2);
