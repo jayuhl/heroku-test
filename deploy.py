@@ -24,5 +24,9 @@ def snake_2():
 def my_map():
    return render_template("mymap.html")
 
+@app.route("/moverGame")
+def mover_game():
+   return render_template("moverPage.html")
+
 if __name__ == "__main__":
    app.run(debug=True)

@@ -13,7 +13,6 @@ function startGame() {
       setInterval(game,1000/15);
     }
   }
-
 px=py=10;
 gs=tc=20;
 ax=ay=15;
