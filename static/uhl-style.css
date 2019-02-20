@@ -1,0 +1,102 @@
+body {
+    /* background-image: url(img/CrushersBand.png);
+    background-size: cover; */
+    background-color: #f1f1f1;
+    margin: 0;
+    min-height: 200vh; /* what is this for? It allows scrolling without content? */
+    font-size: 28px;
+    font-family: Arial, Helvetica, sans-serif;  
+}
+
+canvas {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /* width: 10%; */
+}
+
+/* FOR THE TITLE ABOVE THE NAV BAR */
+.header {
+  font: 30px "cooper black", sans-serif;
+  color: #f1f1f1;
+  background-color: rgb(69, 93, 116);/* #f1f1f1; */
+  padding: 30px;
+  text-align: center;
+}
+
+/**************** FOR THE NAV BAR  ********************/
+.nav-item{
+  font-size: 20px;
+}
+
+.nav-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+    position: -webkit-sticky;
+    /* Safari */
+    position: sticky;
+    width: 100%;
+    top: 0px;
+  }
+  
+  /* How can we make this a reference to only the 
+  list items in the nav bar and not ALL
+  It is currently applying to ALL li items, right? */
+  li {
+    display: inline-block;
+  }
+  
+  li a,
+  .dropbtn {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover,
+  .dropdown:hover .dropbtn {
+    background-color: lightgray;
+    color: black;
+    /* background-color: rgb(228, 40, 40); */
+  }
+  
+  li.dropdown {
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: lightgray;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  /**************** END CSS FOR NAV BAR  ********************/
+
+  .main-content {
+    color: black;
+    background-color: wheat;
+    /* Play with difference between margin and padding, etc. */
+    padding: 40px;
+  }

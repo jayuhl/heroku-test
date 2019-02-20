@@ -4,25 +4,21 @@ app = Flask(__name__)
 def home():
    return render_template("index.html")
 
-@app.route("/page2")
+@app.route("/atcs")
 def page_2():
-   return render_template("page2.html")
+   return render_template("atcs.html")
 
-@app.route("/page3")
-def page_3():
-   return render_template("page3.html")
+@app.route("/hcs")
+def honors_java():
+   return render_template("hcs.html")
+
+@app.route("/apcs")
+def ap_java():
+   return render_template("apcs.html")
 
 @app.route("/snake")
 def snake_1():
-   return render_template("snakegame.html")
-
-@app.route("/snake2")
-def snake_2():
-   return render_template("snaketake2.html")
-
-@app.route("/map")
-def my_map():
-   return render_template("mymap.html")
+   return render_template("snake.html")
 
 @app.route("/moverGame")
 def mover_game():

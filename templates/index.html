@@ -1,25 +1,51 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <!-- <script src></script> -->
-    <link type="text/css" rel="stylesheet" href="static/styles.css">
+    <link type="text/css" rel="stylesheet" href="static/uhl-style.css">
 </head>
 <body>
-    <a href="/page2">Go to page 2</a>
-    <a href="/page3">Go to page 3</a>
-    <a href="/snake">Play Snake</a>
-    <a href="/snake2">Play Snake2</a>
-    <a href="/map">PH Google Map</a>
-    <a href="/moverGame">Mover Game</a>
+    <div class="header">
+        <h2>All Things Computer Science and Math</h2>
+        <p>A Resource For Learning and Playing</p>
+    </div>
+        
+    <!--Navigation bar-->
+    <div id="nav-placeholder"></div>
+    <script src="//code.jquery.com/jquery.min.js"></script>
+    <script>
+        $.get("static/navbar.html", function(data){
+            $("#nav-placeholder").replaceWith(data);
+        });
+    </script>
+    <!--end of Navigation bar-->
 
-    <br/>
-    <h1>Hello There!</h1>
+    <div class="main-content">
+    <!-- <br/> -->
+    <h2>Hello There!</h2>
     <br/>
     <img alt="Avatar image" class="img-circle" title="some hover over text" src="https://code.sololearn.com/Icons/Avatars/0.jpg">
     <br/>
     <br/>
-    <button onClick="javascript:alert('First Page Button Using Internal Javascript!')">Test Event</button>
-    <h2>This Snake Game is loaded from a file on my Canvas LMS page</h2>
-    <p><iframe src="https://pascack.instructure.com/courses/3801/files/578292/download" width="500" height="500" data-api-endpoint="https://pascack.instructure.com/api/v1/courses/3801/files/578292" data-api-returntype="File"></iframe></p>
+    <button onClick="javascript:alert('You pressed the button. That\'s it!')">Test an Event</button>
+    <!-- <h2>This Snake Game is loaded from a file on my Canvas LMS page</h2>
+    <p><iframe src="https://pascack.instructure.com/courses/3801/files/578292/download" width="500" height="500" data-api-endpoint="https://pascack.instructure.com/api/v1/courses/3801/files/578292" data-api-returntype="File"></iframe></p> -->
+
+    <div class="content">
+        <h3>Sticky Navigation Example</h3>
+        <p>Here are some random numbers:</p>
+        <p>3</p>
+        <p>1</p>
+        <p>4</p>
+    </div>
+
+    <button onClick="javascript:alert('Thank you for pressing!')">Test Event</button>
+    <br/><br/>
+    <audio controls>
+        <source src="http://www.sololearn.com/uploads/audio.mp3" type="audio/mpeg">
+        <source src="http://www.sololearn.com/uploads/audio.ogg" type="audio/ogg">
+    </audio>
+    <br/>
+</div>
+
 </body>
 </html>

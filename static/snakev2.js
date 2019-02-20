@@ -1,3 +1,4 @@
+//NON-WORKING VRESION
 function startGame() {
     myGameArea.start();
   }
